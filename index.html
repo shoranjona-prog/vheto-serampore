@@ -80,6 +80,13 @@ h2{font-family:'Fraunces',serif;font-size:clamp(1.9rem,5vw,3rem);line-height:1.1
 .lead{color:#d8cfbc;max-width:640px;margin-bottom:36px;font-size:1.05rem}
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
+
+h2.rv{position:relative;overflow:hidden}
+h2.rv::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:translateX(0);transition:transform .8s ease .15s;pointer-events:none}
+h2.rv.in::after{transform:translateX(101%)}
+.goldline{display:block;width:min(180px,40vw);height:2px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .8s ease}
+.goldline.in{opacity:1}
+
 /* dishes bento: text cards, hover reveal (gold top line + lift) */
 .bento{display:grid;gap:16px;grid-template-columns:1fr}
 @media(min-width:700px){.bento{grid-template-columns:repeat(6,1fr)}
@@ -215,6 +222,7 @@ footer .sig{color:var(--gold2);margin-top:8px}
   </div>
 </div>
 
+<div class="goldline rv" aria-hidden="true"></div>
 <section id="dishes">
   <div class="wrap">
     <p class="kicker rv">SIGNATURE DISHES · স্বাদের থালা</p>
@@ -252,6 +260,7 @@ footer .sig{color:var(--gold2);margin-top:8px}
   </div>
 </section>
 
+<div class="goldline rv" aria-hidden="true"></div>
 <section id="gallery">
   <div class="wrap">
     <p class="kicker rv">GALLERY · ভেতরের ছবি</p>
@@ -275,6 +284,7 @@ footer .sig{color:var(--gold2);margin-top:8px}
   </div>
 </section>
 
+<div class="goldline rv" aria-hidden="true"></div>
 <section class="reviews" id="reviews">
   <div class="wrap">
     <p class="kicker rv">REVIEWS · অতিথিদের কথা</p>
