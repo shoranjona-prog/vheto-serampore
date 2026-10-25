@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vheto (ভেতো) | Authentic Bengali Restaurant in Serampore</title>
+<meta name="description" content="Vheto — real Bengali food in Serampore's heritage court compound. Daab chingri, fish fry, chicken cutlet, polao. 4.2 stars from 934 Google reviews. Open daily 12-10 PM.">
+<link rel="preload" as="image" href="img/hero-night.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Vheto (ভেতো)",
+"image":"https://vheto-serampore.pages.dev/img/hero-night.webp",
+"url":"https://vheto-serampore.pages.dev/","telephone":"+916290995464",
+"servesCuisine":"Bengali","acceptsReservations":true,
+"address":{"@type":"PostalAddress","streetAddress":"Serampore Court Compound","addressLocality":"Serampore","addressRegion":"West Bengal","postalCode":"712201","addressCountry":"IN"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"22:00"}],
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"934"}}
+</script>
+<style>
+:root{--ink:#14110c;--ink2:#1d1913;--gold:#c9a227;--gold2:#e8c96a;--cream:#f5efe2;--muted:#a89f8d;--card:#211c15;--line:rgba(201,162,39,.22);--red:#e5484d}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--ink);scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.serif{font-family:'Fraunces',Georgia,serif}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:#14110c;font-weight:700;padding:10px 18px;z-index:200;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .3s,box-shadow .3s}
+header.scrolled{background:rgba(20,17,12,.92);backdrop-filter:blur(14px);box-shadow:0 4px 24px rgba(0,0,0,.45)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;color:var(--gold2)}
+.brand small{font-family:'Inter';font-size:.7rem;color:var(--muted);letter-spacing:2px;font-weight:500}
+.navlinks{display:none;gap:26px;font-size:.9rem;font-weight:500}
+.navlinks a{opacity:.85;padding:6px 0;position:relative}
+.navlinks a.active{color:var(--gold2);opacity:1}
+.navlinks a.active::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#14110c;font-weight:700;padding:13px 28px;border-radius:12px;border:0;cursor:pointer;font-size:1rem;font-family:inherit;min-height:48px;transition:background .25s,transform .25s}
+.btn:hover{background:var(--gold2)}
+.btn.ghost{background:transparent;color:var(--gold2);border:1px solid var(--line)}
+@media(min-width:860px){.navlinks{display:flex}}
+/* hero: staggered entrance (0.2s gaps) + Ken Burns + kinetic reveal */
+.hero{min-height:100svh;display:flex;align-items:flex-end;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('img/hero-night.webp') center/cover;animation:kenburns 22s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.08)}}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,12,.5) 0%,rgba(20,17,12,.2) 45%,rgba(20,17,12,.94) 100%)}
+.hero-inner{position:relative;z-index:2;padding:130px 0 90px;width:100%}
+.eyebrow{color:var(--gold2);font-size:.78rem;letter-spacing:3px;font-weight:700;margin-bottom:16px}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2.6rem,9vw,5.2rem);line-height:1.05;font-weight:700;margin-bottom:18px}
+.hero h1 .it{font-style:italic;color:var(--gold2)}
+.hero h1 .word{display:inline-block;overflow:hidden;vertical-align:bottom}
+.hero h1 .word span{display:inline-block;animation:wordup .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes wordup{from{transform:translateY(110%)}to{transform:translateY(0)}}
+.hero .sub{font-size:clamp(1rem,2.6vw,1.2rem);color:#e8e0cf;max-width:600px;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.caption{font-size:.8rem;color:var(--muted);font-style:italic}
+.caption b{color:var(--gold2);font-style:normal;letter-spacing:1px}
+.stars{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:600}
+.stars .n{color:var(--gold2)}
+.scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:.75rem;letter-spacing:2px;z-index:2}
+/* staggered entrance: each .st gets +0.2s */
+.st{opacity:0;animation:fadeup .8s ease both}
+.st:nth-child(1){animation-delay:.0s}.st:nth-child(2){animation-delay:.2s}.st:nth-child(3){animation-delay:.4s}.st:nth-child(4){animation-delay:.6s}.st:nth-child(5){animation-delay:.8s}.st:nth-child(6){animation-delay:1s}
+@keyframes fadeup{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+/* trust strip */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink2)}
+.trust-in{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;padding:20px;max-width:1120px;margin:0 auto}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#2c241c;color:var(--gold2);font-weight:700;font-size:.9rem;padding:.65rem 1.3rem;border-radius:16px;border:1px solid var(--line)}
+.badge.star{background:var(--gold);color:#14110c;border:0}
+.trust span.t{color:var(--muted);font-size:.9rem}
+/* sections */
+section{padding:84px 0}
+.kicker{color:var(--gold);font-size:.78rem;letter-spacing:3px;font-weight:700;margin-bottom:14px}
+h2{font-family:'Fraunces',serif;font-size:clamp(1.9rem,5vw,3rem);line-height:1.12;margin-bottom:16px;font-weight:600}
+.lead{color:#d8cfbc;max-width:640px;margin-bottom:36px;font-size:1.05rem}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+/* dishes bento: text cards, hover reveal (gold top line + lift) */
+.bento{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:700px){.bento{grid-template-columns:repeat(6,1fr)}
+.dish:nth-child(1){grid-column:span 6}.dish:nth-child(2),.dish:nth-child(3),.dish:nth-child(4),.dish:nth-child(5){grid-column:span 3}.dish:nth-child(6),.dish:nth-child(7){grid-column:span 3}}
+.dish{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.dish::before{content:'';position:absolute;left:0;top:0;height:3px;width:0;background:var(--gold);transition:width .35s ease}
+.dish:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.dish:hover::before{width:100%}
+.dish-tag{font-size:.72rem;letter-spacing:2px;color:var(--gold);font-weight:700;margin-bottom:8px}
+.dish h3{font-family:'Fraunces',serif;font-size:1.4rem;margin-bottom:8px}
+.dish h3 span{color:var(--gold2);font-weight:400;font-size:1rem}
+.dish p{color:var(--muted);font-size:.95rem}
+.daypart{margin-top:40px;border-left:3px solid var(--gold);padding:6px 0 6px 22px;max-width:640px}
+.daypart p{font-family:'Fraunces',serif;font-size:clamp(1.15rem,3vw,1.5rem);line-height:1.55;font-style:italic;color:#e8e0cf}
+/* story */
+.story{background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.story ul{list-style:none;display:grid;gap:14px;margin:20px 0 28px}
+.story li{padding-left:28px;position:relative;color:#d8cfbc}
+.story li::before{content:'✦';position:absolute;left:0;color:var(--gold)}
+.facts{display:flex;gap:28px;flex-wrap:wrap}
+.fact b{display:block;font-family:'Fraunces',serif;font-size:1.9rem;color:var(--gold2)}
+.fact span{font-size:.82rem;color:var(--muted);letter-spacing:1px}
+/* gallery */
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.pill{border:1px solid var(--line);background:transparent;color:var(--cream);padding:9px 20px;border-radius:999px;font-size:.86rem;font-weight:600;cursor:pointer;transition:background .25s,color .25s;font-family:inherit}
+.pill.active,.pill:hover{background:var(--gold);border-color:var(--gold);color:#14110c}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}}
+.gal a{border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:1;cursor:zoom-in;display:block}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal a:hover img{transform:scale(1.06)}
+.gal a.hide{display:none}
+.lb{position:fixed;inset:0;z-index:150;background:rgba(10,8,6,.94);display:none;align-items:center;justify-content:center;touch-action:pan-y}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:84vh;border-radius:12px;border:1px solid var(--line)}
+.lb .x{position:absolute;top:18px;right:22px;font-size:2rem;color:var(--cream);cursor:pointer;background:none;border:none}
+.lb .nav-b{position:absolute;top:50%;transform:translateY(-50%);background:rgba(20,17,12,.7);border:1px solid var(--line);color:var(--gold2);font-size:1.6rem;width:48px;height:48px;border-radius:50%;cursor:pointer;font-family:inherit}
+.lb .prev{left:14px}.lb .next{right:14px}
+.lb .count{position:absolute;bottom:22px;color:var(--muted);font-size:.9rem;letter-spacing:2px}
+/* reviews */
+.reviews{background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.big-score{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.big-score b{font-family:'Fraunces',serif;font-size:3.4rem;color:var(--gold2)}
+.big-score span{color:var(--muted)}
+.rgrid{display:grid;gap:16px;margin-top:30px}
+@media(min-width:760px){.rgrid{grid-template-columns:repeat(3,1fr)}}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.rcard .st2{color:var(--gold);letter-spacing:2px;margin-bottom:12px}
+.rcard p{font-style:italic;color:#e0d6c2;margin-bottom:16px}
+.rcard b{font-size:.9rem}
+.rcard small{display:block;color:var(--muted);font-size:.78rem}
+/* booking */
+.book-grid{display:grid;gap:36px}
+@media(min-width:900px){.book-grid{grid-template-columns:1fr 1.1fr}}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.frow{display:grid;gap:16px;margin-bottom:16px}
+@media(min-width:560px){.frow.two{grid-template-columns:1fr 1fr}}
+.field label{display:block;font-size:.78rem;letter-spacing:2px;font-weight:700;color:var(--gold2);margin-bottom:8px}
+.field input,.field select{width:100%;background:#14110c;border:1px solid var(--line);color:var(--cream);border-radius:12px;padding:13px 15px;font-size:1rem;font-family:inherit}
+.field .hint{display:none;font-size:.8rem;color:var(--red);margin-top:6px}
+.field:has(input:user-invalid){border-left:3px solid var(--red);padding-left:12px}
+.field:has(input:user-invalid) .hint{display:block}
+.book-info p{color:var(--muted);margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;margin:18px 0;font-size:.95rem}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--gold2);font-weight:600}
+/* visit */
+.visit-grid{display:grid;gap:16px}
+@media(min-width:760px){.visit-grid{grid-template-columns:repeat(3,1fr)}}
+.vcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.vcard h3{font-size:.78rem;letter-spacing:2px;color:var(--gold);margin-bottom:10px}
+.vcard p{font-size:1.02rem}
+.mapframe{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
+.mapframe iframe{width:100%;height:320px;border:0;display:block}
+footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--muted);font-size:.88rem}
+footer .sig{color:var(--gold2);margin-top:8px}
+.wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;z-index:110;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.wa svg{width:30px;height:30px;fill:#fff}
+@media(max-width:759px){.wa{bottom:84px}}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:105;display:flex;background:rgba(20,17,12,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+.mbar a{flex:1;text-align:center;padding:13px;border-radius:12px;font-weight:700;min-height:48px;display:flex;align-items:center;justify-content:center}
+.mbar .b1{background:var(--gold);color:#14110c}
+.mbar .b2{border:1px solid var(--line);color:var(--gold2)}
+@media(min-width:760px){.mbar{display:none}}
+/* magnetic CTA: desktop only, JS-gated (pointer:fine + min-width 1024px) */
+@media (prefers-reduced-motion:reduce){
+  .hero-bg,.hero h1 .word span,.st{animation:none!important}
+  .st,.rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#book">Skip to table booking</a>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top">ভেতো <small>VHETO</small></a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="btn magnetic" href="#book" style="padding:10px 20px;min-height:44px">Book Table</a>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-veil"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow st">ভেতো · SERAMPORE · HERITAGE CANTEEN, REBORN</p>
+    <h1 class="st"><span class="word"><span>Pet&nbsp;bhore,</span></span> <span class="word"><span>mon&nbsp;bhore</span></span> —<br><span class="word"><span class="it">real&nbsp;Bengali&nbsp;food.</span></span></h1>
+    <p class="sub st">The daab chingri 934 reviewers keep writing about — prawns in creamy coconut gravy, served in the shell itself.</p>
+    <div class="hero-cta st">
+      <a class="btn magnetic" href="#book">Book My Table</a>
+      <a class="btn ghost" href="#dishes">See the dishes</a>
+    </div>
+    <p class="caption st"><b>ABOVE —</b> Vheto's signboard glows over Serampore Court Compound at night.</p>
+    <div class="stars st">★★★★☆ <span class="n">4.2</span> · 934 Google reviews</div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<div class="trust">
+  <div class="trust-in">
+    <span class="badge star">★ 4.2 · 934 reviews</span>
+    <span class="badge">Open daily 12–10 PM</span>
+    <span class="badge">100% Bengali kitchen</span>
+    <span class="t">Serampore Court Compound, Hooghly</span>
+  </div>
+</div>
+
+<section id="dishes">
+  <div class="wrap">
+    <p class="kicker rv">SIGNATURE DISHES · স্বাদের থালা</p>
+    <h2 class="rv">The plates people <span class="serif" style="font-style:italic;color:var(--gold2)">write reviews about.</span></h2>
+    <p class="lead rv">No shortcuts, no fusion experiments — the Bengali classics our guests mention by name. Ask on WhatsApp for today's menu.</p>
+    <div class="bento">
+      <div class="dish rv"><p class="dish-tag">MOST LOVED</p><h3>Daab Chingri <span>· ডাব চিংড়ি</span></h3><p>Prawns simmered in creamy coconut gravy, served inside the daab itself. Our most-reviewed dish.</p></div>
+      <div class="dish rv"><p class="dish-tag">CRISPY CLASSIC</p><h3>Bengali Fish Fry <span>· মাছের ফ্রাই</span></h3><p>Golden, crisp outside and flaky inside — with fresh salad and kasundi-style mustard.</p></div>
+      <div class="dish rv"><p class="dish-tag">HOUSE CURRY</p><h3>Macher Jhol <span>· মাছের ঝোল</span></h3><p>Slow-cooked Bengali fish curry with green chilli — the taste of a Sunday bari lunch.</p></div>
+      <div class="dish rv"><p class="dish-tag">SLOW COOKED</p><h3>Mangshor Jhol <span>· মাংসের ঝোল</span></h3><p>Rich, dark mutton curry finished with crisp fried onions. Deep, homely spice.</p></div>
+      <div class="dish rv"><p class="dish-tag">QUIET HERO</p><h3>Alu Posto &amp; Bhat <span>· আলু পোস্ত</span></h3><p>The quiet hero of Bengali kitchens — poppy-seed comfort with steamed rice.</p></div>
+      <div class="dish rv"><p class="dish-tag">ALSO LOVED</p><h3>Basanti Polao <span>· বাসন্তী পোলাও</span></h3><p>Fragrant, golden, celebratory — the polao guests ask for by name.</p></div>
+      <div class="dish rv"><p class="dish-tag">ALSO LOVED</p><h3>Chicken Cutlet <span>· চিকেন কাটলেট</span></h3><p>Crisp, old-school cutlet — the evening snack that built its own fan club.</p></div>
+    </div>
+    <div class="daypart rv">
+      <p>"Lunch is macher jhol and rice. Evening is coffee under the lamps, bamboo roof overhead. Come for one, stay for both."</p>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <p class="kicker rv">OUR STORY · আমাদের গল্প</p>
+    <h2 class="rv">A heritage canteen,<br><span style="font-style:italic;color:var(--gold2)">reborn as Vheto.</span></h2>
+    <ul>
+      <li class="rv">Once the Serampore Court compound's own canteen — red-brick walls, green shutters, high beamed ceilings.</li>
+      <li class="rv">Red chairs, wooden tables, ceiling fans turning slow overhead.</li>
+      <li class="rv">Plates that taste like they came from a thakuma's kitchen — nothing fancy, everything honest.</li>
+    </ul>
+    <div class="facts">
+      <div class="fact rv"><b>4.2★</b><span>934 GOOGLE REVIEWS</span></div>
+      <div class="fact rv"><b>12–10</b><span>OPEN DAILY (PM)</span></div>
+      <div class="fact rv"><b>100%</b><span>BENGALI MENU</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="kicker rv">GALLERY · ভেতরের ছবি</p>
+    <h2 class="rv">Step inside Vheto.</h2>
+    <p class="lead rv">Real photos from the restaurant — dishes and the place itself. Tap any photo to view it full-size, swipe to move between photos.</p>
+    <div class="pills rv">
+      <button class="pill active" data-f="all">All</button>
+      <button class="pill" data-f="dish">Dishes</button>
+      <button class="pill" data-f="place">The Place</button>
+    </div>
+    <div class="gal" id="gal">
+      <a data-cat="dish" href="img/dish-daab-chingri.webp" class="rv"><img src="img/dish-daab-chingri.webp" alt="Daab chingri" loading="lazy"></a>
+      <a data-cat="place" href="img/interior-hall.webp" class="rv"><img src="img/interior-hall.webp" alt="Dining hall with red chairs and beamed ceiling" loading="lazy"></a>
+      <a data-cat="dish" href="img/dish-fishfry.webp" class="rv"><img src="img/dish-fishfry.webp" alt="Bengali fish fry" loading="lazy"></a>
+      <a data-cat="place" href="img/exterior-day.webp" class="rv"><img src="img/exterior-day.webp" alt="Vheto entrance by day" loading="lazy"></a>
+      <a data-cat="dish" href="img/dish-fish-curry.webp" class="rv"><img src="img/dish-fish-curry.webp" alt="Fish curry" loading="lazy"></a>
+      <a data-cat="place" href="img/outdoor-night.webp" class="rv"><img src="img/outdoor-night.webp" alt="Outdoor dining at night" loading="lazy"></a>
+      <a data-cat="dish" href="img/dish-curry-onion.webp" class="rv"><img src="img/dish-curry-onion.webp" alt="Mutton curry topped with fried onions" loading="lazy"></a>
+      <a data-cat="dish" href="img/dish-posto.webp" class="rv"><img src="img/dish-posto.webp" alt="Alu posto with rice" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="kicker rv">REVIEWS · অতিথিদের কথা</p>
+    <h2 class="rv">What Serampore <span style="font-style:italic;color:var(--gold2)">says.</span></h2>
+    <div class="big-score rv"><b>4.2</b><span>★★★★☆ · Based on 934 Google reviews</span></div>
+    <div class="rgrid">
+      <div class="rcard rv"><div class="st2">★★★★★</div><p>"Nice authentic Bengali dishes. Overall very good service and polite staff. Must visit."</p><b>Sushanta Mitra</b><small>Google review</small></div>
+      <div class="rcard rv"><div class="st2">★★★★★</div><p>"A quintessential Bengali restaurant built on the structure of Serampore Court compound heritage canteen."</p><b>Aritra Pal</b><small>Google review</small></div>
+      <div class="rcard rv"><div class="st2">★★★★☆</div><p>"The daab chingri is the star — prawns in creamy coconut gravy served in the shell. Outdoor seating under the lamps is lovely in the evening."</p><b>Guest review</b><small>Google reviews</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap book-grid">
+    <div class="book-info rv">
+      <p class="kicker">RESERVATION · টেবিল বুকিং</p>
+      <h2>Book your table<br><span style="font-style:italic;color:var(--gold2)">in 30 seconds.</span></h2>
+      <p>Pick a date and your own time — your booking request goes straight to Vheto on WhatsApp. No app, no waiting on hold.</p>
+      <table class="hours">
+        <tr><td><b>Monday – Sunday</b></td><td>12:00 PM – 10:00 PM</td></tr>
+        <tr><td><b>Address</b></td><td>Serampore Court Compound, Hooghly 712201</td></tr>
+        <tr><td><b>Phone</b></td><td><a href="tel:+916290995464" style="font-size:1.05rem;color:var(--gold2);font-weight:600">062909 95464</a></td></tr>
+      </table>
+    </div>
+    <form id="bform" class="rv" novalidate>
+      <div class="frow two">
+        <div class="field"><label for="bname">NAME</label><input id="bname" placeholder="e.g. Priya Sharma" required autocomplete="name"><p class="hint">Please tell us your name.</p></div>
+        <div class="field"><label for="bphone">PHONE</label><input id="bphone" inputmode="tel" placeholder="10-digit mobile" required autocomplete="tel" pattern="[0-9]{10}"><p class="hint">Enter a 10-digit mobile number.</p></div>
+      </div>
+      <div class="frow two">
+        <div class="field"><label for="bdate">DATE</label><input id="bdate" type="date" required><p class="hint">Pick a date.</p></div>
+        <div class="field"><label for="btime">TIME (YOUR CHOICE, 12 PM – 10 PM)</label><input id="btime" type="time" min="12:00" max="22:00" required><p class="hint">Between 12 PM and 10 PM.</p></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="bguests">GUESTS</label>
+          <select id="bguests" required>
+            <option value="">Select…</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+ (large group)</option>
+          </select><p class="hint">How many guests?</p></div>
+      </div>
+      <button class="btn magnetic" type="submit" style="width:100%">Request Booking on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker rv">FIND US · ঠিকানা</p>
+    <h2 class="rv">In the heart of <span style="font-style:italic;color:var(--gold2)">Serampore.</span></h2>
+    <div class="visit-grid" style="margin-top:28px">
+      <div class="vcard rv"><h3>ADDRESS</h3><p>Serampore Court Compound,<br>Serampore, Hooghly,<br>West Bengal 712201</p></div>
+      <div class="vcard rv"><h3>HOURS</h3><p>Open every day<br><b style="color:var(--gold2)">12:00 PM – 10:00 PM</b><br><span style="color:var(--muted);font-size:.9rem">Kitchen takes last orders by 9:30 PM.</span></p></div>
+      <div class="vcard rv"><h3>GET HERE</h3><p style="margin-bottom:14px">Two minutes from Serampore station.</p><a class="btn ghost" href="https://maps.app.goo.gl/pa42oVrDNJMpshvX8" target="_blank" rel="noopener">Get Directions →</a></div>
+    </div>
+    <div class="mapframe rv">
+      <iframe title="Vheto on Google Maps — Serampore Court Compound" src="https://maps.google.com/maps?q=Serampore%20Court%20Compound%2C%20Hooghly%20712201&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section style="padding:70px 0;background:linear-gradient(180deg,var(--ink2),var(--ink));border-top:1px solid var(--line)">
+  <div class="wrap" style="text-align:center">
+    <h2 class="rv">Pet bhore, mon bhore —<br><span style="font-style:italic;color:var(--gold2)">that's the Vheto promise.</span></h2>
+    <p class="rv" style="color:var(--muted);margin-bottom:26px">Come hungry. Leave planning your next visit.</p>
+    <a class="btn magnetic rv" href="#book">Book My Table</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>ভেতো · Serampore Court Compound, Hooghly 712201 · 062909 95464</p>
+    <p style="margin-top:6px"><a href="#story">Story</a> · <a href="#visit">Visit</a> · <a href="#book">Book a table</a></p>
+    <p class="sig">Demo website crafted by Rohan, SiteBanao</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb">
+  <button class="x" id="lbX" aria-label="Close">×</button>
+  <button class="nav-b prev" id="lbP" aria-label="Previous">‹</button>
+  <img id="lbImg" src="" alt="Gallery photo">
+  <button class="nav-b next" id="lbN" aria-label="Next">›</button>
+  <div class="count" id="lbC"></div>
+</div>
+
+<div class="mbar">
+  <a class="b1" href="#book">Book My Table</a>
+  <a class="b2" href="tel:+916290995464">Call</a>
+</div>
+
+<a class="wa" href="https://wa.me/916290995464?text=Hello%20Vheto!%20I%20would%20like%20to%20book%20a%20table." target="_blank" rel="noopener" aria-label="Chat with Vheto on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 2 6.5L4 29l7.7-2c1.8 1 3.9 1.6 6.1 1.6h.1c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.6 1.2 1.2-4.5-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.8C4.9 9.4 9.4 4.9 16 4.9S27.1 9.4 27.1 16 22.6 24.8 16 24.8z"/></svg>
+</a>
+
+<script>
+(function(){
+"use strict";
+var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* header blur + active nav */
+var hdr = document.getElementById('hdr');
+var links = Array.prototype.slice.call(document.querySelectorAll('.navlinks a'));
+var secs = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+function onScroll(){
+  hdr.classList.toggle('scrolled', window.scrollY > 40);
+  var cur = null;
+  secs.forEach(function(s,i){ if(window.scrollY >= s.offsetTop - 120) cur = i; });
+  links.forEach(function(a,i){ a.classList.toggle('active', i === cur); });
+}
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+/* scroll reveals: transform/opacity only */
+if(!reduced && 'IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+}
+/* magnetic CTA: desktop only (pointer:fine + min-width 1024px) */
+if(!reduced && matchMedia('(pointer: fine) and (min-width: 1024px)').matches){
+  document.querySelectorAll('.magnetic').forEach(function(el){
+    el.addEventListener('mousemove', function(e){
+      var r = el.getBoundingClientRect();
+      var x = (e.clientX - r.left - r.width/2) * 0.18;
+      var y = (e.clientY - r.top - r.height/2) * 0.28;
+      el.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    });
+    el.addEventListener('mouseleave', function(){ el.style.transform = ''; });
+  });
+}
+/* gallery: filters + lightbox with swipe */
+var pills = Array.prototype.slice.call(document.querySelectorAll('.pill'));
+var items = Array.prototype.slice.call(document.querySelectorAll('#gal a'));
+pills.forEach(function(p){
+  p.addEventListener('click', function(){
+    pills.forEach(function(x){ x.classList.remove('active'); });
+    p.classList.add('active');
+    var f = p.getAttribute('data-f');
+    items.forEach(function(a){
+      a.classList.toggle('hide', f !== 'all' && a.getAttribute('data-cat') !== f);
+    });
+  });
+});
+var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'),
+    lbC = document.getElementById('lbC'), cur = 0, vis = items;
+function show(n){
+  if(!vis.length) return;
+  cur = (n + vis.length) % vis.length;
+  lbImg.src = vis[cur].href;
+  lbImg.alt = vis[cur].querySelector('img').alt;
+  lbC.textContent = (cur+1) + ' / ' + vis.length;
+}
+items.forEach(function(a){
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    vis = items.filter(function(x){ return !x.classList.contains('hide'); });
+    show(vis.indexOf(a));
+    lb.classList.add('open'); document.body.style.overflow = 'hidden';
+  });
+});
+function closeLb(){ lb.classList.remove('open'); document.body.style.overflow = ''; }
+document.getElementById('lbX').addEventListener('click', closeLb);
+document.getElementById('lbP').addEventListener('click', function(e){ e.stopPropagation(); show(cur-1); });
+document.getElementById('lbN').addEventListener('click', function(e){ e.stopPropagation(); show(cur+1); });
+lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+document.addEventListener('keydown', function(e){
+  if(!lb.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLb();
+  if(e.key === 'ArrowLeft') show(cur-1);
+  if(e.key === 'ArrowRight') show(cur+1);
+});
+var tx = 0;
+lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, {passive:true});
+lb.addEventListener('touchend', function(e){
+  var dx = e.changedTouches[0].clientX - tx;
+  if(Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1));
+}, {passive:true});
+/* booking -> WhatsApp, free-form time within opening hours */
+var form = document.getElementById('bform');
+var d = document.getElementById('bdate');
+if(d){ d.min = new Date().toISOString().split('T')[0]; }
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!form.checkValidity()){ form.reportValidity(); return; }
+  function g(id){ return document.getElementById(id).value.trim(); }
+  var t = g('btime'), t12 = t, m = t.match(/^(\d{1,2}):(\d{2})$/);
+  if(m){ var h = +m[1], ap = h >= 12 ? 'PM' : 'AM'; h = h % 12 || 12; t12 = h + ':' + m[2] + ' ' + ap; }
+  var msg = 'Hello Vheto! I would like to book a table.\n\nName: ' + g('bname') +
+    '\nPhone: ' + g('bphone') + '\nDate: ' + g('bdate') +
+    '\nTime: ' + t12 + '\nGuests: ' + g('bguests');
+  window.open('https://wa.me/916290995464?text=' + encodeURIComponent(msg), '_blank');
+});
+})();
+</script>
+</body>
+</html>
